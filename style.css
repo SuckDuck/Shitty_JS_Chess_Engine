@@ -1,0 +1,64 @@
+/* ------------------ CASILLAS ------------------ */
+th{
+    width: 50px;
+    height: 50px;
+}
+
+th:hover{
+    background: #F1A38B;
+}
+
+#board_container{
+    background: #AF6521;
+    width: max-content;
+    padding: 16px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.wc{
+    background: #FFDBBA;
+}
+
+.bc{
+    background: #9A4A00;
+}
+
+.selected{
+    background: #EC592B!important;
+}
+
+.lmw{
+    background: #A259FF!important;
+}
+
+.lmb{
+    background: #6A56E7!important;
+}
+
+.cm{
+    background: #FF2E2E!important;
+}
+
+.enroque{
+    background: #760495!important;
+}
+
+/* --------------------- PIEZAS ------------------- */
+.piece{
+    width: 45px;
+}
+
+.promotion_icon{
+    width: 90px;
+    height: 90px;
+    border: none;
+    background: #FFDBBA;
+}
+
+.promotion_icon > img{
+    width: 80px;
+    height: 80px;
+}

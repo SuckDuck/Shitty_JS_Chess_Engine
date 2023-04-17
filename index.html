@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHESS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="turn">turn: white</div>
+
+    <div id="board_container">
+        <table>
+
+            <tr> 
+                <th class="wc" id="A8"> <img class="black piece R" src="sprites/black/rock.png" alt=""> </th> 
+                <th class="bc" id="B8"> <img class="black piece N" src="sprites/black/horse.png" alt=""> </th> 
+                <th class="wc" id="C8"> <img class="black piece B" src="sprites/black/bishop.png" alt=""> </th> 
+                <th class="bc" id="D8"> <img class="black piece Q" src="sprites/black/queen.png" alt=""> </th> 
+                <th class="wc" id="E8"> <img class="black piece K" src="sprites/black/king.png" alt=""> </th> 
+                <th class="bc" id="F8"> <img class="black piece B" src="sprites/black/bishop.png" alt=""> </th> 
+                <th class="wc" id="G8"> <img class="black piece N" src="sprites/black/horse.png" alt=""> </th> 
+                <th class="bc" id="H8"> <img class="black piece R" src="sprites/black/rock.png" alt=""> </th> 
+            </tr>
+
+            <tr> 
+                <th class="bc" id="A7"> <img class="black piece P" src="sprites/black/pawn.png" alt=""> </th> 
+                <th class="wc" id="B7"> <img class="black piece P" src="sprites/black/pawn.png" alt=""> </th> 
+                <th class="bc" id="C7"> <img class="black piece P" src="sprites/black/pawn.png" alt=""> </th> 
+                <th class="wc" id="D7"> <img class="black piece P" src="sprites/black/pawn.png" alt=""> </th> 
+                <th class="bc" id="E7"> <img class="black piece P" src="sprites/black/pawn.png" alt=""> </th> 
+                <th class="wc" id="F7"> <img class="black piece P" src="sprites/black/pawn.png" alt=""> </th> 
+                <th class="bc" id="G7"> <img class="black piece P" src="sprites/black/pawn.png" alt=""> </th> 
+                <th class="wc" id="H7"> <img class="black piece P" src="sprites/black/pawn.png" alt=""> </th> 
+            </tr>
+            
+            <tr> 
+                <th class="wc" id="A6"></th> 
+                <th class="bc" id="B6"></th> 
+                <th class="wc" id="C6"></th> 
+                <th class="bc" id="D6"></th> 
+                <th class="wc" id="E6"></th> 
+                <th class="bc" id="F6"></th> 
+                <th class="wc" id="G6"></th> 
+                <th class="bc" id="H6"></th> 
+            </tr>
+            
+            <tr> 
+                <th class="bc" id="A5"></th> 
+                <th class="wc" id="B5"></th> 
+                <th class="bc" id="C5"></th> 
+                <th class="wc" id="D5"></th> 
+                <th class="bc" id="E5"></th> 
+                <th class="wc" id="F5"></th> 
+                <th class="bc" id="G5"></th> 
+                <th class="wc" id="H5"></th> 
+            </tr>
+
+            <tr> 
+                <th class="wc" id="A4"></th> 
+                <th class="bc" id="B4"></th> 
+                <th class="wc" id="C4"></th> 
+                <th class="bc" id="D4"></th> 
+                <th class="wc" id="E4"></th> 
+                <th class="bc" id="F4"></th> 
+                <th class="wc" id="G4"></th> 
+                <th class="bc" id="H4"></th> 
+            </tr>
+            
+            <tr> 
+                <th class="bc" id="A3"></th> 
+                <th class="wc" id="B3"></th> 
+                <th class="bc" id="C3"></th> 
+                <th class="wc" id="D3"></th> 
+                <th class="bc" id="E3"></th> 
+                <th class="wc" id="F3"></th> 
+                <th class="bc" id="G3"></th> 
+                <th class="wc" id="H3"></th> 
+            </tr>
+
+            <tr> 
+                <th class="wc" id="A2"> <img class="white piece P" src="sprites/white/pawn.png" alt=""> </th> 
+                <th class="bc" id="B2"> <img class="white piece P" src="sprites/white/pawn.png" alt=""> </th> 
+                <th class="wc" id="C2"> <img class="white piece P" src="sprites/white/pawn.png" alt=""> </th> 
+                <th class="bc" id="D2"> <img class="white piece P" src="sprites/white/pawn.png" alt=""> </th> 
+                <th class="wc" id="E2"> <img class="white piece P" src="sprites/white/pawn.png" alt=""> </th> 
+                <th class="bc" id="F2"> <img class="white piece P" src="sprites/white/pawn.png" alt=""> </th> 
+                <th class="wc" id="G2"> <img class="white piece P" src="sprites/white/pawn.png" alt=""> </th> 
+                <th class="bc" id="H2"> <img class="white piece P" src="sprites/white/pawn.png" alt=""> </th> 
+            </tr>
+            
+            <tr> 
+                <th class="bc" id="A1"> <img class="white piece R" src="sprites/white/rock.png" alt=""> </th> 
+                <th class="wc" id="B1"> <img class="white piece N" src="sprites/white/horse.png" alt=""> </th> 
+                <th class="bc" id="C1"> <img class="white piece B" src="sprites/white/bishop.png" alt=""> </th> 
+                <th class="wc" id="D1"> <img class="white piece Q" src="sprites/white/queen.png" alt=""> </th> 
+                <th class="bc" id="E1"> <img class="white piece K" src="sprites/white/king.png" alt=""> </th> 
+                <th class="wc" id="F1"> <img class="white piece B" src="sprites/white/bishop.png" alt=""> </th> 
+                <th class="bc" id="G1"> <img class="white piece N" src="sprites/white/horse.png" alt=""> </th> 
+                <th class="wc" id="H1"> <img class="white piece R" src="sprites/white/rock.png" alt=""> </th> 
+            </tr>
+            
+        </table>
+    </div>
+
+    <script src="sweetalert2.js"></script>
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="player.js"></script>
+</body>
+</html>
